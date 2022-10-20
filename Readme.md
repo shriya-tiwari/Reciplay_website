@@ -4,6 +4,9 @@ The API that is used here is Spoonacular API, which can educate people about the
 
 Go ahead and read the documentation of [**Spoonacular API**](https://spoonacular.com/food-api). 
 
-Here is screenshot of current state of the website.
-![Screenshot (216)](https://user-images.githubusercontent.com/96806111/196964568-a0c9f484-9cc4-4871-bd46-294a984b5e8f.png)
-![Screenshot (217)](https://user-images.githubusercontent.com/96806111/196964598-b3ed42d3-e84c-433d-9902-d5a714118422.png)
+Below are the screenshots of current state of the website.
+
+![Screenshot (216)](https://user-images.githubusercontent.com/96806111/196965147-641a4cb8-5d56-4e1c-be43-0956c19b334c.png)
+![Screenshot (217)](https://user-images.githubusercontent.com/96806111/196965167-ceab742f-ed6b-4c2a-b763-dfac390f2a11.png)
+
+Looking forward interesting contributions :)

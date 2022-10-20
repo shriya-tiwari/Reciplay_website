@@ -1,6 +1,10 @@
 window.onload= function(){
     var addBtn = document.getElementById("addingredient");
-    addBtn.onclick =addingredient;
+    addBtn.onclick = addingredient;
+    var ingredient = document.getElementById("ingredient");
+    ingredient.addEventListener('keypress', function (e) {
+        if (e.keyCode == 13) addBtn.click();
+    });
 }
 
 var myApiKey = config.My_api_key;
@@ -42,8 +46,11 @@ function addingredient(){
     } 
 }
 
-
-
+function react(e) {
+    var icon = e.querySelector('ion-icon');
+    if (icon.name == 'heart-circle') icon.setAttribute('name', 'heart-circle-outline')
+    else icon.setAttribute('name', 'heart-circle');
+}
 
 var popurl = `https://api.spoonacular.com/recipes/random?apiKey=${myApiKey}&number=8`;
 
@@ -63,7 +70,9 @@ async function getPopular(url){
             <div class="card">
                 <div class="head">
                     <div class="icon">
-                        <ion-icon name="heart-circle-outline" class="heart"></ion-icon>
+                        <on-button onclick="react(this)">
+                            <ion-icon name="heart-circle-outline" class="heart"></ion-icon>
+                        </on-button>
                     </div>
                 </div>
                 <div class="text">
@@ -126,7 +135,9 @@ function refresh(){
                     <div class="card">
                         <div class="tail">
                             <div class="icon">
-                                <ion-icon name="heart-circle-outline" class="heart"></ion-icon>
+                                <on-button onclick="react(this)">
+                                    <ion-icon name="heart-circle-outline" class="heart"></ion-icon>
+                                </on-button>
                             </div>
                         </div>
                         <div class="text">
@@ -141,7 +152,7 @@ function refresh(){
                                 </li>
                             </div>
                         </div>
-                        <a href="${response.spoonacularSourceUrl}" class="btn">Let's Cook!</a>
+                        <a href="${response.spoonacularSourceUrl || ('https://spoonacular.com/recipes/' + response.title.replace(' ', '-') + '-' + response.id)}" class="btn">Let's Cook!</a>
                     </div>`;
                     pop.innerHTML += content;
                     var last = Array.from(

@@ -7,6 +7,28 @@ window.onload= function(){
     });
 }
 
+// scroll to top functionality starts
+let mybutton = document.getElementById("scroll-top-btn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "flex";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    document.body.scrollTop = 0; // For Safari
+}
+// scroll to top functionality ends
+
 var myApiKey = config.My_api_key;
 
 //array that stores the ingredients

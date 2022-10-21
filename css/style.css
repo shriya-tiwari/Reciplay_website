@@ -176,9 +176,13 @@ img {
 .card {
     display: inline-block;
     position: relative;
-    background: #ffffff;
     width: 320px;
     margin: 20px;
+    height: 419px;
+    background-color: rgb(46, 73, 83);
+    color: #fff;
+    -webkit-box-shadow: 4px 3px 15px 5px rgba(0,0,0,0.3); 
+    box-shadow: 4px 3px 15px 5px rgba(0,0,0,0.3);
 }
 
 .head, .tail{
@@ -196,15 +200,16 @@ img {
     font-weight: bold;
     padding: 5px;
     border-radius: 50%;
-    cursor: pointer;
 }
 .text .food {
-    color: #212129;
     text-align: left;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin: 5px 30px;
+    color: white;
+
+    
 }
 .text .clock {
     color: #9B9B9B;
@@ -231,6 +236,7 @@ a.btn {
     text-align: center;
     padding: 10px;
     transition: 250ms;
+    font-weight: bold;
 }
 a.btn:hover {
     background: #17BEBB;

@@ -3,7 +3,7 @@ There have been times when even after having enough ingredients at home, we can'
 The API that is used here is Spoonacular API, which can educate people about the nutrition in the meals they have among many other uses like building a website like this one. :)  
 
 Go ahead and read the documentation of [**Spoonacular API**](https://spoonacular.com/food-api). 
-The number od requests to the API is limited so please be cautious while coding, i can wait for few days if you want t continue your work :smile:.
+The number of requests to the API is limited so please be cautious while coding, I can wait for few days if you want to continue your work :smile:.
 
 Below are the screenshots of current state of the website.
 Screenshot - 1 

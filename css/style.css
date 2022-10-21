@@ -223,6 +223,7 @@ h4, .instruction{
 .popular, .foodbyingre{
     display: inline-block;
     padding-left: 35px;
+    margin-bottom: 70px;
     width: 100%;
 }
 

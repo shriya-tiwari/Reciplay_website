@@ -1,3 +1,4 @@
+
 body{
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
@@ -54,13 +55,13 @@ header nav{
 }
 
 header .highlight, header .current a{
-    color: rgb(254, 175, 111);
-    font-weight: bold;
+    color: #feaf6f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header a:hover{
-    color:#cccccc;
-    font-weight: bold;
+    color: #feaf6f;
+    text-decoration: none;
 }
 
 #tags{
@@ -236,3 +237,4 @@ a.btn:hover {
     background: #17BEBB;
     transition: 250ms;
 }
+

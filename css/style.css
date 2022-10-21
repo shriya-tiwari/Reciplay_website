@@ -196,6 +196,7 @@ img {
     font-weight: bold;
     padding: 5px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .text .food {
     color: #212129;

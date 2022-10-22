@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+
 body{
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
@@ -54,13 +59,13 @@ header nav{
 }
 
 header .highlight, header .current a{
-    color: rgb(254, 175, 111);
-    font-weight: bold;
+    color: #feaf6f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header a:hover{
-    color:#cccccc;
-    font-weight: bold;
+    color: #feaf6f;
+    text-decoration: none;
 }
 
 /* customize scrollbar style starts */
@@ -293,4 +298,16 @@ a.btn {
 a.btn:hover {
     background: #17BEBB;
     transition: 250ms;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffaa65;
+    border-radius: 5px;
 }

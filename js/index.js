@@ -39,17 +39,17 @@ var holderList=[];
 function addingredient(){
     var ingredient = document.getElementById("ingredient").value;
     console.log(holderList);
-    if(ingredient==""){
+    if(ingredient.trim()==""){
         alert("Please enter an ingredient!!"); //alerting if no ingredient entered
     }else{
 
         //li element to display the list
         var list = document.createElement("li"); 
         var ingredientList = document.getElementById("ingredient-list");  
-        list.classList.add("list-group-item");
+        list.classList.add("list-group-item", "btn", "btn-light");
 
         //adding ingredient to the list to display
-        list.innerHTML = ingredient; 
+        list.textContent = ingredient; 
 
         //on clicking the ingredient, it should be removed out of the list
         list.onclick = function(){

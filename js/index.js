@@ -46,7 +46,7 @@ function addingredient(){
         //li element to display the list
         var list = document.createElement("li"); 
         var ingredientList = document.getElementById("ingredient-list");  
-        list.classList.add("list-group-item");
+        list.classList.add("list-group-item", "btn", "btn-light");
 
         //adding ingredient to the list to display
         list.textContent = ingredient; 

@@ -39,7 +39,7 @@ var holderList=[];
 function addingredient(){
     var ingredient = document.getElementById("ingredient").value;
     console.log(holderList);
-    if(ingredient==""){
+    if(ingredient.trim()==""){
         alert("Please enter an ingredient!!"); //alerting if no ingredient entered
     }else{
 
@@ -49,7 +49,7 @@ function addingredient(){
         list.classList.add("list-group-item");
 
         //adding ingredient to the list to display
-        list.innerHTML = ingredient; 
+        list.textContent = ingredient; 
 
         //on clicking the ingredient, it should be removed out of the list
         list.onclick = function(){

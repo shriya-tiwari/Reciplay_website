@@ -25,10 +25,9 @@ function topFunction() {
         top: 0,
         behavior: "smooth"
     });
-    document.body.scrol= 0; // For Safari
+    document.body.scrollTop= 0; // For Safari
 }
 // scroll to top functionality ends
-
 
 // Snackbar function 
 function enableSnackbar(snackbarStatus, text) {
@@ -51,8 +50,8 @@ function addingredient(){
     var ingredient = document.getElementById("ingredient").value;
     console.log(holderList);
     if(ingredient.trim()==""){
-        alert("Please enter an ingredient!!"); //alerting if no ingredient entered
-    }else{
+        enableSnackbar("snackbar-danger", "Please enter an ingredient!!");
+    } else {
 
         //li element to display the list
         var list = document.createElement("li"); 
@@ -204,7 +203,7 @@ function refresh(){
         getSearchResult(requrl);
     }
     else{
-        alert("Please enter the ingredients frist!!!");
+        enableSnackbar("snackbar-danger", "Please enter the ingredients frist!!!");
     }
 }
 
@@ -255,3 +254,5 @@ var theme = "dark";
     themeIcon.classList.add("change");
     themeIcon.src = moon;
   }
+
+

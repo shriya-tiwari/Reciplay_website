@@ -22,31 +22,85 @@
                     </ul>
                 </nav>
             </div>
+            <div class="theme-container shadow-dark">
+                <img id="theme-icon"    src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="ERR">
+              </div>
         </header>
 
         <section id="tags">
             <div class="container">
                 <h1>Reciplay</h1>
-                <p>An easy way to prepare meals based on the ingredients<br> you have at hand,
-                   just enter the ingredients and get <br>thousands of delicioussss recipes,
-                   on just a click of a button!!
+                <p>
+                    <span>An</span>
+                    <span>easy</span>
+                    <span>way</span>
+                    <span>to</span>
+                    <span>prepare</span>
+                    <span>meals</span>
+                    <span>based on</span>
+                    <span>the ingredients</span>
+                    <span>You have</span>
+                    <span>at hand,</span>
+                    <span>just enter</span>
+                    <span>the</span>
+                    <span>ingredients</span>
+                    <span>and get</span>
+                    <span>thousands</span>
+                    <span>of</span>
+                    <span>delicioussss</span>
+                    <span>recipes,</span>
+                    <span>on just</span>
+                    <span>click</span>
+                    <span>of a</span>
+                    <span>button!!</span>
                 </p>
             </div>
         </section>
 
-        <div class="page-heading"> <h1>Search using ingredients</h1></div>
+        <div class="page-heading waviy"> 
+            <!-- <h1>Search using ingredients</h1> -->
+            <h1>
+                <span style="--i:1">S</span>
+                <span style="--i:2">e</span>
+                <span style="--i:3">a</span>
+                <span style="--i:4">r</span>
+                <span style="--i:5">c</span>
+                <span style="--i:6">h</span>
+                <span style="--i:7"> </span>
+                <span style="--i:8">U</span>
+                <span style="--i:9">s</span>
+                <span style="--i:10">i</span>
+                <span style="--i:11">n</span>
+                <span style="--i:12">g</span>
+                <span style="--i:13"> </span>
+                <span style="--i:14">I</span>
+                <span style="--i:15">n</span>
+                <span style="--i:16">g</span>
+                <span style="--i:17">r</span>
+                <span style="--i:18">e</span>
+                <span style="--i:19">d</span>
+                <span style="--i:20">i</span>
+                <span style="--i:21">e</span>
+                <span style="--i:22">n</span>
+                <span style="--i:23">t</span>
+                <span style="--i:24">s</span>
+            </h1>
+        </div>
 
         <form class="form-inline container text-center add" onSubmit="return false;"> <!--form to take the ingredients-->
             <input id="ingredient" class="form-control mr-sm-2" placeholder="Add Ingredient" />
             <button type="reset" class="btn btn-outline-success my-2 my-sm-0" id="addingredient">Add</button>
         </form>
 
-        <h4>Ingredient List</h4>
+        <h4 class="ingredientlist">Ingredient List</h4>
         <ul class="list-group" id="ingredient-list"></ul> <!-- list of ingredients to be displayed -->
         <h6 class="instruction">Click on ingredient you want to remove</h6>
 
         <div class="submit">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="submit-final" onclick="refresh()">Submit</button>
+            <button class=" btn btn-outline-success my-2 my-sm-0 glow-on-hover" type="button" id="submit-final" onclick="refresh()">Submit</button>
+           
+         </div>
+  
         </div> <!--button to submit the ingredients enetered-->
 
         <!--Search result  -->
@@ -62,9 +116,6 @@
         <button onclick="topFunction()" id="scroll-top-btn" title="Go to top">
             <img class="arrow-to-top" src="https://img.icons8.com/sf-black/64/FFFFFF/collapse-arrow.png"/>
         </button>
-
-        <!-- Add Snackbar for better alerting -->
-        <div id="snackbar"></div>
 
 
         <script src="./js/config.js" type="text/javascript"></script>

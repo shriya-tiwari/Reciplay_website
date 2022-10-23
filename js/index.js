@@ -29,6 +29,17 @@ function topFunction() {
 }
 // scroll to top functionality ends
 
+
+// Snackbar function 
+function enableSnackbar(snackbarStatus, text) {
+    let snackbar = document.getElementById("snackbar");
+    snackbar.innerHTML = text;
+    snackbar.classList.add("show", snackbarStatus);
+
+    setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
+}
+// Snackbar function ends
+
 var myApiKey = config.My_api_key;
 
 //array that stores the ingredients

@@ -29,6 +29,16 @@ function topFunction() {
 }
 // scroll to top functionality ends
 
+// Snackbar function 
+function enableSnackbar(snackbarStatus, text) {
+    let snackbar = document.getElementById("snackbar");
+    snackbar.innerHTML = text;
+    snackbar.classList.add("show", snackbarStatus);
+
+    setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
+}
+// Snackbar function ends
+
 var myApiKey = config.My_api_key;
 
 //array that stores the ingredients
@@ -40,8 +50,8 @@ function addingredient(){
     var ingredient = document.getElementById("ingredient").value;
     console.log(holderList);
     if(ingredient.trim()==""){
-        alert("Please enter an ingredient!!"); //alerting if no ingredient entered
-    }else{
+        enableSnackbar("snackbar-danger", "Please enter an ingredient!!");
+    } else {
 
         //li element to display the list
         var list = document.createElement("li"); 
@@ -193,7 +203,7 @@ function refresh(){
         getSearchResult(requrl);
     }
     else{
-        alert("Please enter the ingredients frist!!!");
+        enableSnackbar("snackbar-danger", "Please enter the ingredients frist!!!");
     }
 }
 

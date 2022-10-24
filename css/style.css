@@ -549,13 +549,16 @@ span:nth-child(22) {
 }
 
 /* ERROR */
+.error {
+    color: rgb(46, 73, 83);
+}
 
 .error a {
     position: relative;
     text-decoration: underline;
     text-transform: capitalize;
     display: block;
-    font-size: 8px;
-    margin-top: -20px;
+    font-size: 7px;
+    margin-top: -10px;
     color: #afafaf;
 }

@@ -155,6 +155,9 @@ async function getPopular(url) {
         console.error(`${err.name} ${err.code}: ${err.message}`);
         if (err.code === 402) {
             showLimitError();
+        } else {
+            // If it fails to pick popular recipes, it'd hide popular recipes section
+            document.querySelector(".sp").style.display = "none";
         }
     }
 }
@@ -212,26 +215,26 @@ function refresh() {
                 data.map((response) => {
                     var content = `
               <div class="card">
-              <div class="tail">
-              <div class="icon">
-              <on-button onclick="react(this)">
-              <ion-icon name="heart-circle-outline" class="heart"></ion-icon>
-              </on-button>
-              </div>
-              </div>
-              <div class="text">
-              <h1 class="food" title="${response.title}">${
+                <div class="tail">
+                  <div class="icon">
+                    <on-button onclick="react(this)">
+                      <ion-icon name="heart-circle-outline" class="heart"></ion-icon>
+                    </on-button>
+                  </div>
+                </div>
+                <div class="text">
+                <h1 class="food" title="${response.title}">${
                         response.title.slice(0, 26) + "..."
                     }</h1>
                 <div class="stars">
-                <li>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-half-outline"></ion-icon>
-                </li>
-                </div>
+                  <li>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                  </li>
+                  </div>
                 </div>
                 <a href="${
                     response.spoonacularSourceUrl ||
@@ -242,6 +245,7 @@ function refresh() {
                 }" class="btn">Let's Cook!</a>
                 </div>`;
 
+                    pop.innerHTML = "";
                     pop.innerHTML += content;
                     var last = Array.from(
                         document.querySelectorAll(".tail")

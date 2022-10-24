@@ -1,65 +1,65 @@
-body{
+body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
     background-color: rgb(250, 247, 246);
 }
 
-.container{
+.container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-header{
+header {
     background-color: rgb(46, 73, 83);
     color: #ffffff;
     margin-top: auto;
     min-height: 70px;
     border-bottom: rgb(254, 175, 111) 3px solid;
     box-sizing: content-box;
-
 }
-header a{
+header a {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
 
-header ul{
+header ul {
     margin: 0;
     padding: 0;
 }
 
-header li{
+header li {
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
 }
 
-header .webname{
+header .webname {
     float: left;
 }
 
-header .webname h1{
+header .webname h1 {
     margin: 0;
     padding-top: 15px;
     padding-left: 70px;
 }
 
-header nav{
+header nav {
     float: right;
     padding-top: 25px;
 }
 
-header .highlight, header .current a{
+header .highlight,
+header .current a {
     color: rgb(254, 175, 111);
     font-weight: bold;
 }
 
-header a:hover{
-    color:#cccccc;
+header a:hover {
+    color: #cccccc;
     font-weight: bold;
 }
 
@@ -68,24 +68,23 @@ header a:hover{
 ::-webkit-scrollbar {
     width: 18px;
 }
-  
+
 ::-webkit-scrollbar-track {
     background-color: transparent;
 }
-  
+
 ::-webkit-scrollbar-thumb {
     background-color: #a8bbbf;
     border-radius: 20px;
     border: 4px solid transparent;
     background-clip: padding-box;
 }
-  
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: #6c8f96;
 }
 
 /* customize scrollbar style ends */
-
 
 /* scroll to top button styling starts*/
 #scroll-top-btn {
@@ -100,16 +99,16 @@ header a:hover{
     display: none;
     justify-content: center;
     align-items: center;
-    
+
     border: none;
     outline: none;
     border-radius: 50%;
     box-shadow: 0 0 20px rgb(172, 171, 171);
 
-    background-color: #5837D0;
+    background-color: #5837d0;
     padding: 7px 15px;
 }
-  
+
 #scroll-top-btn:hover {
     background-color: #110a29;
 }
@@ -120,33 +119,32 @@ header a:hover{
 
 /* scroll to top button styling starts */
 
-#tags{
+#tags {
     min-height: 320px;
-    background:url(../images/top.jpg) no-repeat ;
+    background: url(../images/top.jpg) no-repeat;
     min-width: max-content;
     background-size: cover;
     object-fit: cover;
     text-align: 150px;
     color: rgb(254, 175, 111);
     border-bottom: rgb(254, 175, 111) 3px solid;
-
 }
 
-#tags h1{
+#tags h1 {
     margin-top: 50px;
     padding-left: 150px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px; 
+    font-size: 50px;
     font-weight: 550;
 }
 
-#tags p{
+#tags p {
     color: #ffffff;
     margin-top: 20px;
     font-size: 25px;
 }
 
-.page-heading{
+.page-heading {
     font: 30px/1.5 Arial, Helvetica, sans-serif;
     background-color: rgb(46, 73, 83);
     color: rgb(254, 175, 111);
@@ -156,22 +154,23 @@ header a:hover{
     border-bottom: rgb(254, 175, 111) 3px solid;
 }
 
-.page-heading h1{
+.page-heading h1 {
     font-size: 35px;
     padding-top: 15px;
 }
 
-.add{
+.add {
     margin-top: 20px;
     text-align: center;
     padding-left: 28%;
 }
 
-.submit{
+.submit {
     text-align: center;
 }
 
-h4, .instruction{
+h4,
+.instruction {
     margin-top: 20px;
     color: rgb(46, 73, 83);
     text-align: center;
@@ -180,37 +179,40 @@ h4, .instruction{
     font-weight: 400;
 }
 
-#ingredient-list{
+#ingredient-list {
     text-align: center;
     overflow-y: scroll;
     padding-left: 40%;
     padding-right: 40%;
 }
 
-#submit-final:hover, #addingredient:hover{
-    background-color: #17BEBB;
+#submit-final:hover,
+#addingredient:hover {
+    background-color: #17bebb;
     color: #fff;
 }
 
-#submit-final, #addingredient {
-    color: #17BEBB;
-    border-color: #17BEBB;
+#submit-final,
+#addingredient {
+    color: #17bebb;
+    border-color: #17bebb;
 }
 
 /* cards css  */
 
 * {
-   margin: 0;
-   padding: 0;
-   font-family: Arial, Helvetica, sans-serif;
-   list-style-type: none;
-   text-decoration: none;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   -o-box-sizing: border-box;
-   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
 }
-.pop, .foodbytitle{
+.pop,
+.foodbytitle {
     font: 30px/1.5 Arial, Helvetica, sans-serif;
     color: rgb(46, 73, 83);
     margin-top: 90px;
@@ -219,16 +221,16 @@ h4, .instruction{
     text-decoration: underline;
 }
 
-
-.popular, .foodbyingre{
+.popular,
+.foodbyingre {
     display: inline-block;
-    padding-left: 35px;
+    padding: 0 35px;
     margin-bottom: 70px;
     width: 100%;
 }
 
 img {
-   max-width: 100%;
+    max-width: 100%;
 }
 
 .card {
@@ -239,7 +241,8 @@ img {
     margin: 20px;
 }
 
-.head, .tail{
+.head,
+.tail {
     background-size: cover;
     min-height: 240px;
 }
@@ -248,7 +251,7 @@ img {
     position: absolute;
     left: 86%;
     bottom: 30.7%;
-    background: #17BEBB;
+    background: #17bebb;
     color: #fff;
     font-size: 2em;
     font-weight: bold;
@@ -265,7 +268,7 @@ img {
     margin: 5px 30px;
 }
 .text .clock {
-    color: #9B9B9B;
+    color: #9b9b9b;
     margin: 0 30px;
     font-size: 20px;
 }
@@ -273,8 +276,8 @@ img {
     margin: 10px 30px;
     font-size: 20px;
 }
-.stars li{
-    color: #FFE500;
+.stars li {
+    color: #ffe500;
 }
 .info {
     margin: 10px 30px;
@@ -291,31 +294,31 @@ a.btn {
     transition: 250ms;
 }
 a.btn:hover {
-    background: #17BEBB;
+    background: #17bebb;
     transition: 250ms;
 }
 
 /* Snackbar Styles */
 
 #snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  color: #fff;
-  text-align: center;
-  border-radius: 2px;
-  padding: 15px;
-  position: fixed;
-  z-index: 1;
-  right: 30px;
-  top: 50px;
-  font-size: 17px;
-  height: fit-content;
+    visibility: hidden;
+    min-width: 250px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+    right: 30px;
+    top: 50px;
+    font-size: 17px;
+    height: fit-content;
 }
 
 #snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 #snackbar.snackbar-danger {
@@ -331,11 +334,35 @@ a.btn:hover {
 }
 
 @keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/* ERROR */
+
+.error a {
+    position: relative;
+    text-decoration: underline;
+    text-transform: capitalize;
+    display: block;
+    font-size: 8px;
+    margin-top: -20px;
+    color: #afafaf;
 }

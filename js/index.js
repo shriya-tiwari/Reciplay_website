@@ -105,10 +105,6 @@ async function getPopular(url) {
             throw error;
         }
 
-        if (!data.length) {
-            throw new Error("Oops! No recipes found...");
-        }
-
         if (res.status !== 200) {
             throw new Error("Something went wrong");
         }
@@ -159,9 +155,6 @@ async function getPopular(url) {
         console.error(`${err.name} ${err.code}: ${err.message}`);
         if (err.code === 402) {
             showLimitError();
-        } else {
-            // If it popular picks can't be found it'll hide popular pick section
-            document.querySelector(".sp").style.display = "none";
         }
     }
 }

@@ -162,7 +162,7 @@ header a:hover {
 .add {
     margin-top: 20px;
     text-align: center;
-    padding-left: 28%;
+    justify-content: center;
 }
 
 .submit {
@@ -182,9 +182,36 @@ h4,
 
 #ingredient-list {
     text-align: center;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-left: 40%;
     padding-right: 40%;
+    position: relative;
+}
+
+#ingredient-list .list-group-item {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#ingredient-list .list-group-item::after {
+    content: 'x';
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 50px;
+    top: 0;
+    left: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(0,0,0,.125);
+    transition: transform 0.25s;
+    background-color: #FF6F91;
+    color: #fff;
+}
+
+#ingredient-list .list-group-item:hover::after {
+    transform: translateX(-100%);
 }
 
 #submit-final:hover,

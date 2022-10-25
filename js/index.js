@@ -212,6 +212,9 @@ function refresh() {
                     throw new Error("Something went wrong");
                 }
 
+                // Remove loading spinner if no error found
+                pop.innerHTML = "";
+
                 data.map((response) => {
                     var content = `
               <div class="card">
@@ -245,7 +248,6 @@ function refresh() {
                 }" class="btn">Let's Cook!</a>
                 </div>`;
 
-                    pop.innerHTML = "";
                     pop.innerHTML += content;
                     var last = Array.from(
                         document.querySelectorAll(".tail")

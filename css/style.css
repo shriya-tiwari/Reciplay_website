@@ -66,16 +66,17 @@ header a:hover {
 
 header
 {
-    font-family: Raleway;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
 	padding: 0em 0em;
 	text-align: center;
     background: #555;
+    border-bottom: rgb(254, 175, 111) 3px solid;
 }
 
 header h1
 {
-    color: #AAA;
+    color: white;
     font-size: 40px;
     font-weight: lighter;
     margin-bottom: 30px;
@@ -83,7 +84,7 @@ header h1
 
 header span
 {
-    color: #222;
+    color: yellow;
 }
 
 div.container
@@ -108,7 +109,7 @@ div.container a
 
 .deepOrange
 {
-    background: #ff5722;
+    background: rgb(46, 73, 83);
 }
 
 div.pullRightLeft a:before, div.pullRightLeft a:after

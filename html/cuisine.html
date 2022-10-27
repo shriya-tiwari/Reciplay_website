@@ -1,79 +1,108 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Recipley | Welcome</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-    </head>
-    <body>
-        <header>
-            <div class="'container">
-                <div class="webname"> 
-                    <h1>Rec<span class="highlight">iplay</span></h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="categories.html">Categories</a></li>
-                        <li class="current"><a href="cuisine.html">Cuisines</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-        </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Recipley | Welcome</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+  </head>
 
-        <section id="tags">
-            <div class="container">
-                <h1>Reciplay</h1>
-                <!-- <p>An easy way to prepare meals based on the ingredients<br> you have at hand,
+  <body>
+    <header>
+      <nav>
+        <div class="container deepOrange pullRightLeft">
+          <div class="webname">
+            <h1>Cuis<span class="highlight">ines</span></h1>
+          </div>
+          <a href="../index.html">Home</a>
+          <a href="categories.html">Categories</a>
+          <a href="cuisine.html">Cuisines</a>
+        </div>
+      </nav>
+      <div class="theme-container shadow-dark">
+        <img
+          id="theme-icon"
+          src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg"
+          alt="ERR"
+        />
+      </div>
+    </header>
+
+    <section id="tags">
+      <div class="container">
+        <h1>Reciplay</h1>
+        <!-- <p>An easy way to prepare meals based on the ingredients<br> you have at hand,
                    just enter the ingredients and get <br>thousands of delicioussss recipes,
                    on just a click of a button!!!!  
                 </p> -->
-                <p>
-                    <span>An</span>
-                    <span>easy</span>
-                    <span>way</span>
-                    <span>to</span>
-                    <span>prepare</span>
-                    <span>meals</span>
-                    <span>based on</span>
-                    <span>the ingredeients</span>
-                    <span>You have</span>
-                    <span>at hand,</span>
-                    <span>just enter</span>
-                    <span>the</span>
-                    <span>ingredeients</span>
-                    <span>and get</span>
-                    <span>of</span>
-                    <span>thousands</span>
-                    <span>delicioussss</span>
-                    <span>recipes.</span>
-                </p>
-            </div>
-        </section>
+        <p>
+          <span>An</span>
+          <span>easy</span>
+          <span>way</span>
+          <span>to</span>
+          <span>prepare</span>
+          <span>meals</span>
+          <span>based on</span>
+          <span>the ingredeients</span>
+          <span>You have</span>
+          <span>at hand,</span>
+          <span>just enter</span>
+          <span>the</span>
+          <span>ingredeients</span>
+          <span>and get</span>
+          <span>of</span>
+          <span>thousands</span>
+          <span>delicioussss</span>
+          <span>recipes.</span>
+        </p>
+      </div>
+    </section>
 
-        <div class="page-heading"> <h1>Search from cuisines across the world</h1></div>
+    <div class="page-heading">
+      <h1>Search from cuisines across the world</h1>
+    </div>
 
-        <form class="form-inline container text-center add"> <!--form to take the ingredients-->
-            <input id="ingredient" class="form-control mr-sm-2" placeholder="Enter Cuisines" />
-            <button type="reset" class="btn btn-outline-success my-2 my-sm-0" id="addingredient">Add</button>
-        </form>
+    <form class="form-inline container text-center add">
+      <!--form to take the ingredients-->
+      <input
+        id="ingredient"
+        class="form-control mr-sm-2"
+        placeholder="Enter Cuisines"
+      />
+      <button
+        type="reset"
+        class="btn btn-outline-success my-2 my-sm-0"
+        id="addingredient"
+      >
+        Add
+      </button>
+    </form>
 
-        <h4>Ingredient List</h4>
-        <ul class="list-group" id="ingredient-list"></ul> <!-- list of ingredients to be displayed -->
-        <h6 class="instruction">Click the ingredient to remove it</h6>
+    <h4>Ingredient List</h4>
+    <ul class="list-group" id="ingredient-list"></ul>
+    <!-- list of ingredients to be displayed -->
+    <h6 class="instruction">Click the ingredient to remove it</h6>
 
-        <div class="submit">
-            <button class="btn btn-outline-success my-2 my-sm-0 glow-on-hover" type="button" id="submit-final" onclick="refresh()">Submit</button>
-        </div> <!--button to submit the ingredients enetered-->
-        
+    <div class="submit">
+      <button
+        class="btn btn-outline-success my-2 my-sm-0 glow-on-hover"
+        type="button"
+        id="submit-final"
+        onclick="refresh()"
+      >
+        Submit
+      </button>
+    </div>
+    <!--button to submit the ingredients enetered-->
 
-
-
-
-        <script src="../js/index.js"></script>
-    </body>
+    <script src="../js/index.js"></script>
+  </body>
 </html>

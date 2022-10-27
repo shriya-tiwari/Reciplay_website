@@ -67,11 +67,10 @@ header a:hover {
 header
 {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-	padding: 0em 0em;
 	text-align: center;
     background: #555;
     border-bottom: rgb(254, 175, 111) 3px solid;
+
 }
 
 header h1
@@ -89,9 +88,10 @@ header span
 
 div.container
 {
-    font-family: Raleway;
-    margin: 0 auto;
-	padding: 1.5em 3em;
+    font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    max-width: 100%;
 	text-align: center;
 }
 
